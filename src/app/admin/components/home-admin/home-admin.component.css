@@ -1,0 +1,39 @@
+table {
+    width: 100%;
+  }
+
+.custom-td {
+    text-align: center; /* Adjust text alignment */
+}
+
+.custom-th {
+  text-align: center; /* Adjust text alignment */
+}
+
+
+
+.emptyMargin{
+  margin:0 0 20% 0;
+}
+
+.cartMargin{
+  margin:5% 0;
+}
+
+.quantityW{
+  width:50px;
+}
+
+
+.buttonCart{
+  padding:10px 20px;
+  background-color: #78290f;;
+  color:white;
+  font-weight: bold;
+  border: 2px outset #78290f;
+  
+}
+
+.marginContainer{
+  margin:7% 0;
+}

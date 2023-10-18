@@ -1,0 +1,32 @@
+.carousel-inner{
+    height: 600px!important;
+    width: 100%;
+  
+   
+}
+.carousel-item{
+    float:none; 
+    transition: 0s !important;
+}
+.carousel-inner img{
+  
+    object-fit: cover;
+}
+
+  
+  
+@media screen and (max-width:426px){
+   
+    .carousel-inner{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:376px){
+    .carousel-inner{
+        height: 300px;
+    }
+  
+  
+}
+

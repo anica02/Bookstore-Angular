@@ -1,0 +1,277 @@
+<div class="container mb-3">
+    <div class="row">
+        <div class="col-12 text-center  margin">
+            <h1 class="mb-5">Create book form</h1>
+            <form  [formGroup]="bookForm" enctype="multipart/form-data">
+                <div class="row">
+                   
+                        <div class="col-12">
+                            <p>
+                                <mat-form-field  >
+                                  <mat-label>Name</mat-label>
+                                  <input matInput formControlName="name"/>
+                                  <mat-error>
+                                    <ng-container *ngIf="bookForm.get('name')?.hasError('required')">
+                                        The field is required.
+                                    </ng-container>
+                            
+                                  </mat-error>
+                                </mat-form-field>
+                              </p>
+                        </div>
+                        <div class="col-12">
+                            <p>
+                                <mat-form-field  >
+                                  <mat-label>Description</mat-label>
+                                  <input matInput formControlName="description"/>
+                                  <mat-error>
+                                    <ng-container *ngIf="bookForm.get('description')?.hasError('required')">
+                                        The field is required.
+                                    </ng-container>
+                                   
+                                  </mat-error>
+                                </mat-form-field>
+                              </p>
+                        </div>
+                        <div class="col-12">
+                            <p>
+                                <mat-form-field  >
+                                  <mat-label>Code</mat-label>
+                                  <input matInput formControlName="code"/>
+                                  <mat-error>
+                                    <ng-container *ngIf="bookForm.get('code')?.hasError('required')">
+                                        The field is required.
+                                    </ng-container>
+                                   
+                                  </mat-error>
+                                </mat-form-field>
+                              </p>
+                        </div>
+                       <div class="col-12">
+                        <p>
+                            <mat-form-field appearance="fill">
+                                <mat-label>Publisher</mat-label>
+                                <mat-select formControlName="publisher">
+                                    <mat-option *ngFor="let p of allPublishers" [value]="p.id">
+                                        {{p.name}}
+                                    </mat-option>
+                                </mat-select>
+                                <mat-error>
+                                    <ng-container *ngIf="bookForm.get('publisher')?.hasError('required')">
+                                        The field is required.
+                                    </ng-container>
+                                   
+                                  </mat-error>
+
+                            </mat-form-field>
+                        </p>
+                       </div>
+                       <div class="col-12">
+                        <p>
+                            <mat-form-field appearance="fill">
+                                <mat-label>Authors</mat-label>
+                                <mat-select formControlName="authors" multiple>
+                                    <mat-option *ngFor="let a of allAuthors" [value]="a.id">
+                                        {{a.firstName}} {{a.lastName}}
+                                    </mat-option>
+                                </mat-select>
+                                <mat-error>
+                                    <ng-container *ngIf="bookForm.get('authors')?.hasError('required')">
+                                        The field is required.
+                                    </ng-container>
+                                   
+                                  </mat-error>
+
+                            </mat-form-field>
+                        </p>
+                       </div>
+                       <div class="col-12">
+                        <p>
+                            <mat-form-field appearance="fill">
+                                <mat-label>Genres</mat-label>
+                                <mat-select formControlName="genres" multiple>
+                                    <mat-option *ngFor="let g of allGenres" [value]="g.id">
+                                        {{g.name}} 
+                                    </mat-option>
+                                </mat-select>
+                                <mat-error>
+                                    <ng-container *ngIf="bookForm.get('genres')?.hasError('required')">
+                                        The field is required.
+                                    </ng-container>
+                                   
+                                  </mat-error>
+
+                            </mat-form-field>
+                        </p>
+                       </div>
+                       <div class="col-12">
+                        <p>
+                            <mat-form-field  >
+                              <mat-label>Numbe of pages</mat-label>
+                              <input matInput formControlName="numberOfPages"/>
+                              <mat-error>
+                                <ng-container *ngIf="bookForm.get('numberOfPages')?.hasError('required')">
+                                    The field is required.
+                                </ng-container>
+                        
+                              </mat-error>
+                            </mat-form-field>
+                          </p>
+                        </div>
+                        <div class="col-12">
+                            <p>
+                                <mat-form-field  >
+                                  <mat-label>Book cover</mat-label>
+                                  <mat-select formControlName="bookCover" >
+                                    <mat-option *ngFor="let b of bookCovers" [value]="b.value">
+                                        {{b.viewValue}} 
+                                    </mat-option>
+                                </mat-select>
+                                  <mat-error>
+                                    <ng-container *ngIf="bookForm.get('bookCover')?.hasError('required')">
+                                        The field is required.
+                                    </ng-container>
+                            
+                                  </mat-error>
+                                </mat-form-field>
+                              </p>
+                        </div>
+                        <div class="col-12">
+                            <p>
+                                <mat-form-field  >
+                                  <mat-label>Book format</mat-label>
+                                  <input matInput formControlName="bookFormat"/>
+                                  <mat-error>
+                                    <ng-container *ngIf="bookForm.get('bookFormat')?.hasError('required')">
+                                        The field is required.
+                                    </ng-container>
+                                    <ng-container *ngIf="bookForm.get('bookFormat')?.hasError('pattern')">
+                                       Book format example: 22x12
+                                    </ng-container>
+                                  </mat-error>
+                                </mat-form-field>
+                              </p>
+                        </div>
+                        <div class="col-12">
+                            <p>
+                                <mat-form-field  >
+                                  <mat-label>Book writing </mat-label>
+                                  <mat-select formControlName="bookWritingSystem" >
+                                    <mat-option *ngFor="let b of bookWriting" [value]="b.value">
+                                        {{b.viewValue}} 
+                                    </mat-option>
+                                </mat-select>
+                                  <mat-error>
+                                    <ng-container *ngIf="bookForm.get('bookWritingSystem')?.hasError('required')">
+                                        The field is required.
+                                    </ng-container>
+                            
+                                  </mat-error>
+                                </mat-form-field>
+                              </p>
+                        </div>
+                        <div class="col-12">
+                            <p>
+                                <mat-form-field >
+                                  <mat-label>Year</mat-label>
+                                  <input matInput formControlName="year"/>
+                                  <mat-error>
+                                    <ng-container *ngIf="bookForm.get('year')?.hasError('required')">
+                                        The field is required.
+                                    </ng-container>
+                            
+                                  </mat-error>
+                                </mat-form-field>
+                              </p>
+                        </div>
+                        <div class="col-12">
+                            <p>
+                                <mat-form-field >
+                                  <mat-label>Price in €</mat-label>
+                                  <input matInput formControlName="price"/>
+                                  <mat-error>
+                                    <ng-container *ngIf="bookForm.get('price')?.hasError('required')">
+                                        The field is required.
+                                    </ng-container>
+                            
+                                  </mat-error>
+                                </mat-form-field>
+                              </p>
+                        </div>
+                        <div class="col-12">
+                            <p>
+                                <mat-form-field >
+                                  <mat-label>Discount</mat-label>
+                                  <input matInput formControlName="discount"/>
+                                
+                                </mat-form-field>
+                              </p>
+                        </div>
+                        <div class="col-12">
+                            <p>
+                                <mat-form-field >
+                                  <mat-label>Discount starts from</mat-label>
+                                  <input matInput formControlName="discountStartsFrom"/>
+                                  <mat-error>
+                                    <ng-container *ngIf="bookForm.get('discountStartsFrom')?.hasError('required')">
+                                        The field is required.
+                                    </ng-container>
+                                    <ng-container *ngIf="bookForm.get('discountStartsFrom')?.hasError('pattern')">
+                                        Date format: 2015-05-16
+                                   </ng-container>
+                                  </mat-error>
+                                </mat-form-field>
+                              </p>
+                        </div>
+
+                        <div class="col-12">
+                            <p>
+                                <mat-form-field >
+                                  <mat-label>Discount ends at</mat-label>
+                                  <input matInput formControlName="discountEndsAt"/>
+                                  <mat-error>
+                                    <ng-container *ngIf="bookForm.get('discountEndsAt')?.hasError('required')">
+                                        The field is required.
+                                    </ng-container>
+                                    <ng-container *ngIf="bookForm.get('discountEndsAt')?.hasError('pattern')">
+                                        Date format: 2015-05-16
+                                   </ng-container>
+                                  </mat-error>
+                                </mat-form-field>
+                              </p>
+                        </div>
+                        <!--
+                        <div class="col-12">
+                            <p>
+                                <mat-form-field>
+                                    <mat-label>File matInput</mat-label>
+                                    <button mat-icon-button matPrefix (click)="f_input.click()">
+                                <mat-icon>attach_file</mat-icon>
+                              </button>
+                                    <input type="text" readonly matInput formControlName="image" />
+                                    <input
+                                type="file"
+                                multiple
+                                hidden
+                                #f_input
+                                (change)="f_input.files && handleFileInputChange(f_input.files)"
+                              />
+                                    <mat-error>this field is required</mat-error>
+                                </mat-form-field>
+                              </p>
+                        </div>-->
+
+                       
+                       
+               </div>
+                <div class="col-12 mt-5">
+                    <button mat-raised-button color="warn" (click)="checkForm()" [disabled]="bookForm.invalid">Submit</button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+</div>
+

@@ -1,0 +1,17 @@
+<header>
+    <div class="container-fluid header-top">
+      <div class="row d-flex justify-content-between">
+        <div class="col-12 col-sm-6 col-md-6  col-lg-6 my-3 header-logo">
+          <a class="navbar-brand" href="index.html"><img alt="logo" src="../../../../assets/img/LogoPortal.png"/></a>
+        </div>
+        <div class="col-12 col-sm-6  col-md-6  col-lg-6 header-icons">
+         
+          <a [routerLink]="href" class="nav-link" routerLinkActive="active"><i class="fas fa-user" style="color: #78290f;"></i> {{ name }}</a> 
+        </div>
+      </div>
+    </div>
+    <div class="container d-flex justify-content-center">
+      <app-nav></app-nav>
+    </div>
+</header>
+

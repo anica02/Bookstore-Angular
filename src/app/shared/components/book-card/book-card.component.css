@@ -1,0 +1,117 @@
+
+.bookCard{
+    position:relative;
+}
+.title{
+    font-size:18px;
+    
+}
+.author{
+    margin:0;
+}
+.price{
+    color:darkred;
+    font-weight: bold;
+}
+.marginText{
+    margin:2% 0;
+}
+.discount{
+    float:right;
+    position: relative;
+  
+}
+
+.bookCard p{
+    margin:0 !important;
+}
+/*
+.bookCard img:hover{
+    opacity: 0.6;
+}*/
+.objOpacity{
+    opacity: 0.6;
+}
+.hidden{
+    display:none;
+}
+.show{
+    display:block;
+}
+.bookAddToCart{
+    position: absolute;
+   top:35%;
+   left:34%;
+}
+.bookDetails{
+    position: absolute;
+    top:25%;
+    left:40%;
+   
+}
+.bookDetails2{
+    position: absolute;
+    top:25%;
+     left:38%;
+}
+.bookAddToCart2{
+    position: absolute;
+    top:35%;
+    left:30%;
+}
+
+
+
+@media screen and (max-width:426px){
+   
+    .bookAddToCart{
+        left:37%;
+     }
+     .bookDetails{
+         left:42%;
+        
+     }
+     .bookAddToCart2{
+        left:37%;
+     }
+     .bookDetails2{
+         left:42%;
+        
+     }
+    
+  
+}
+@media screen and (max-width:376px){
+   
+    .bookAddToCart{
+        left:35%;
+     }
+     .bookDetails{
+         left:41%;
+        
+     }
+     .bookAddToCart2{
+        left:35%;
+     }
+     .bookDetails2{
+         left:41%;
+        
+     }
+  
+}
+@media screen and (max-width:321px){
+   
+    .bookAddToCart{
+       
+       left:33%;
+    }
+  
+    .bookAddToCart2{
+       
+        left:31%;
+     }
+
+     .bookDetails2{
+        left:38%;
+     }
+}

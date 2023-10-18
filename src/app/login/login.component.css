@@ -1,0 +1,13 @@
+mat-form-field{
+    width:350px;
+}
+
+.margin{
+    margin:5% 0 ;
+}
+
+.link{
+    text-decoration: underline;
+    font-size: bold;
+    color:brown;
+}

@@ -1,0 +1,42 @@
+
+<div class=" py-3 px-4 text-center cardWidth bookCard" (mouseover)="onMouseOver()" (mouseleave)="onMouseLeave()">
+    <div *ngIf="book.bookPublisher.discount" class="{{bookDiscountClass}}">
+            <i class="fas fa-tags"></i>
+            <span>
+                    {{book.bookPublisher.discount.discountPercentage}}%
+            </span>
+    </div>
+    <img src="../../../../assets/img/{{book.bookPublisher.image.path}}" class="card-img-top {{elementOpacity}} {{bookImgClass}}" alt="{{book.name}}" (mouseover)="onMouseOver()" (mouseleave)="onMouseLeave()">
+    <div class="card-body mt-3">
+        <p class="title">{{book.name}}</p>
+        <ng-container *ngFor="let author of book.bookAuthors; let i=index">
+                  <p>
+                    {{author.firstName}} {{author.lastName }}
+                  </p>  
+        </ng-container>
+        <div *ngIf="book.bookPublisher.discount; else noDiscount" class="mt-3">
+            <p class="price">{{book.bookPublisher.price - (book.bookPublisher.price * book.bookPublisher.discount.discountPercentage / 100) | currency:'EUR'}}</p>
+            <s>
+            {{book.bookPublisher.price | currency:'EUR'}}
+            </s>
+        </div>
+        <ng-template #noDiscount>
+            <div class="mt-3 mb-5">
+                <p class="price">
+                    {{book.bookPublisher.price | currency:'EUR'}}
+                </p>
+            </div>
+        
+        </ng-template>
+    
+    </div>
+    <div class="{{elementHidden}}">
+        <button (click)="showBook(book.id)" mat-raised-button class="btnView {{bookBtnViewClass}} mb-2">View</button><br/>
+        <button mat-raised-button mat-stroked-button class="btnView {{bookBtnCartClass}}" (click)="addToCart(book.bookPublisher.id)">Add to cart</button>
+    </div>
+   
+</div>
+
+
+
+ 

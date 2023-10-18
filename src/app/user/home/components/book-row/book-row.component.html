@@ -1,0 +1,14 @@
+<div class="container-fluid content">
+    <hr class="hr-tekst" attr.data-content="{{row.title}}">
+    <div class="row">
+        <ng-container *ngFor="let book of row.books | slice:0:4; let i=index;">
+            <div class="col-12 col-sm-6  col-lg-4 col-xl-3 product">
+            
+            <app-book-card [book]="book" [bookImgClass]="bookImgClassParent" [bookDiscountClass]="bookDiscountClassParent" [bookBtnCartClass]="bookButtonCartClass"  [bookBtnViewClass]="bookButtonViewClass">
+            </app-book-card>
+           
+            </div>
+
+        </ng-container>
+    </div>
+</div>

@@ -1,0 +1,64 @@
+
+[
+    {
+        "id": 1,
+        "name": "EVRO GUINT",
+        "location": "Dimitrija Tucovića 41, Belgrade",
+        "website": null
+    },
+    {
+        "id": 2,
+        "name": "HODDER",
+        "location": "London, England",
+        "website": "https://www.hodder.co.uk"
+    },
+    {
+        "id": 3,
+        "name": "SEZAM BOOK",
+        "location": "Cara Dušana 40, Belgrade",
+        "website": "https://www.sezambook.rs/"
+    },
+    {
+        "id": 4,
+        "name": "LAGUNA",
+        "location": "Kralja Petra 45, Belgrade",
+        "website": "https://www.laguna.rs/"
+    },
+    {
+        "id": 5,
+        "name": "FINESA",
+        "location": "Krunska 36, Belgrade",
+        "website": "https://www.finesa.edu.rs/"
+    },
+    {
+        "id": 6,
+        "name": "LITTLE, BROWN AND COMPANY",
+        "location": "Boston, U.S",
+        "website": "https://www.littlebrown.com/"
+    },
+    {
+        "id": 7,
+        "name": "PENGUIN RANDOM HOUSE",
+        "location": "New York, U.S",
+        "website": "https://www.penguinrandomhouse.com/"
+    },
+    {
+        "id": 8,
+        "name": "HARPERCOLLINS",
+        "location": "New York, U.S",
+        "website": "https://www.harpercollins.com/"
+    },
+    {
+        "id": 9,
+        "name": "ČAROBNA KNJIGA D.O.O.",
+        "location": "Dečanska 5, Belgrade",
+        "website": "https://www.carobnaknjiga.rs/"
+    },
+    {
+        "id": 10,
+        "name": "WORDSWORTH EDITIONS",
+        "location": "Ware, England",
+        "website": "https://wordsworth/edistions.com/"
+    }
+
+]

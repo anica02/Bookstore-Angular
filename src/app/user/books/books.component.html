@@ -1,0 +1,64 @@
+<div class="container mb-3">
+    <div class="row">
+        <div class="col-12 col-sm-3  col-lg-2 col-xl-2 col-2 borderR">
+
+            <form [formGroup]="genreForm">
+               
+                        <mat-form-field class="example-form-field" >
+                            <mat-label>Search by book name</mat-label>
+                            <input matInput type="text" (keypress)="searchChange($event)"  [value]="bookSearch">
+                            <button *ngIf="bookSearch" matSuffix mat-icon-button aria-label="Clear" (click)="clearSearch()">
+                                <mat-icon>close</mat-icon>
+                              </button>
+                        </mat-form-field>
+                        <mat-accordion>
+                            <mat-expansion-panel>
+                              <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                 Genres
+                                </mat-panel-title>
+                               
+                              </mat-expansion-panel-header>
+                        
+                              <mat-selection-list #genres (selectionChange)="onListSelectionChange($event)"  formControlName="selectedTech">
+                                <mat-list-option class="list-item" *ngFor="let genre of allGenres" [value]="genre">
+                                  {{genre.name}}
+                                </mat-list-option>
+                              </mat-selection-list>
+                            </mat-expansion-panel>
+                        
+                        </mat-accordion>
+                         
+             
+            </form>
+            
+        </div>
+        <div class=" col-12 col-sm-9  col-lg-10 col-xl-10">
+            <div class="row">
+                <ng-container *ngIf="bookCount !==0; else notFound">
+                    <ng-container *ngFor="let book of books | slice:0:8; let i=index;">
+                
+                        <div class="col-12 col-sm-6  col-lg-4 col-xl-3 product">
+                            
+                                <app-book-card [book]="book" bookImgClass="bookCardImgFull" bookDiscountClass="discountBooks" bookBtnCartClass="bookAddToCart2"  bookBtnViewClass="bookDetails2">
+                                </app-book-card>
+                        </div>
+            
+                    </ng-container>
+                    <mat-paginator *ngIf="bookCount >=8" [length]="bookLength" [pageSize]="pageSize" [pageSizeOptions]="[]" (page)="onPageChange($event)"></mat-paginator>
+
+                </ng-container>
+                <ng-template #notFound>
+                    <div class="col-12">
+                        <div class="alert alert-warning text-center" role="alert">
+                           No books have been found
+                        </div>
+                    </div>
+                  
+                </ng-template>
+                
+            </div>
+            
+        </div>
+    </div>
+</div>

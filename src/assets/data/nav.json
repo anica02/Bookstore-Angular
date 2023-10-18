@@ -1,0 +1,27 @@
+[
+    {
+        "href":"/home",
+        "text":"Home",
+        "role":"unauthorized"
+    },
+    {
+        "href":"/books",
+        "text":"Books",
+        "role":"unauthorized"
+    },
+    {
+        "href":"/cart",
+        "text":"Cart",
+        "role":"user"
+    },
+    {
+        "href":"/user-orders",
+        "text":"Orders",
+        "role":"user"
+    },{
+        "href":"/about",
+        "text":"About",
+        "role":"unauthorized"
+    }
+   
+]

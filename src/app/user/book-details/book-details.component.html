@@ -1,0 +1,65 @@
+<div class="container py-5 mb-5">
+    <div class="row">
+        <div class="col-12 col-sm-6 col-lg-6 col-xl-6 imgDiv d-flex justify-content-center">
+            <img src="../../../../assets/img/{{book.bookPublisher.image.path}}" alt="{{book.name}}"/>
+        </div>
+        <div class="col-12 col-sm-6  col-lg-6 col-xl-6">
+            <h1>{{book.name}}</h1>
+            <div class="colorGrey mb-3">
+                <h3>Genres:
+                    
+                        <ng-container *ngFor="let genre of book.bookGenres; let isLast=last">
+                           
+                                {{genre.name | listing:', ':isLast}}
+                           
+                        </ng-container>
+                    </h3>
+                <p>Code: {{book.code}}</p>
+                <p>Number of pages : {{book.bookPublisher.numberOfPages}}</p>
+                <p>Year: {{book.bookPublisher.year}}</p>
+                <p>Cover: {{book.bookPublisher.bookCover}}</p>
+                <p>Format: {{book.bookPublisher.bookFormat}}</p>
+                <p>Writting: {{book.bookPublisher.bookWritingSystem}}</p>
+            </div>
+            <h4>Author: 
+                
+                    <ng-container *ngFor="let author of  book.bookAuthors; let isLast=last">
+                         {{author.firstName}} {{author.lastName | listing:', ':isLast}} 
+                    </ng-container>
+           
+            </h4>
+            <h4>Publisher: {{book.bookPublisher.publisherName}}</h4>
+            <br/>
+            <div class="mb-3 description">
+                <p>{{descriptionSubstr}}</p>
+                <button  mat-button ngClass="colorGrey btnShowAll {{visible}}" (click)="showFullDescription()">Show all</button>
+            </div>
+            <hr/>
+            <div class="priceDiv">
+                <div *ngIf="book.bookPublisher.discount; else noDiscount" class="mt-3">
+                    <s *ngIf="book.bookPublisher.discount;" class="colorGrey">
+                        {{book.bookPublisher.price | currency:'EUR'}} 	
+                    </s>
+                    <p class="date">Starts from: {{book.bookPublisher.discount.startsFrom | date:'short'}} / Ends at: {{book.bookPublisher.discount.endsAt | date:'short'}}</p>
+                   
+                    <p class="price">Price online: {{book.bookPublisher.price - (book.bookPublisher.price * book.bookPublisher.discount.discountPercentage / 100) | currency:'EUR'}}</p>
+                    
+                </div>
+                <ng-template #noDiscount>
+                    <div class="mt-3 mb-5">
+                        <p class="price">
+                            {{book.bookPublisher.price | currency:'EUR'}}
+                        </p>
+                    </div>
+                
+                </ng-template>
+            </div>
+            
+            <div class="mt-3 quantity">
+                
+                <button  mat-raised-button mat-stroked-button class="btnView ml-3" (click)="addToCart(book.bookPublisher.id)">Add to cart</button>
+            </div>
+          
+        </div>
+    </div>
+</div>

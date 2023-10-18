@@ -1,0 +1,45 @@
+<h2 mat-dialog-title>Items</h2>
+<mat-dialog-content>
+    <div class="mat-elevation-z8 cartMargin">
+            
+        <table mat-table [dataSource]="dataSource">
+      
+         
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef class="custom-th"> Name </th>
+            <td mat-cell *matCellDef="let element" class="custom-td"> {{element.name}} </td>
+          </ng-container>
+      
+         
+          <ng-container matColumnDef="image">
+            <th mat-header-cell *matHeaderCellDef class="custom-th"> Image </th>
+            <td mat-cell *matCellDef="let element" class="custom-td"> <img src="../../../../assets/img/{{element.image}}" alt="{{element.name}}" class="image"/></td>
+          </ng-container>
+      
+          
+          <ng-container matColumnDef="price">
+            <th mat-header-cell *matHeaderCellDef class="custom-th"> Price </th>
+            <td mat-cell *matCellDef="let element" class="custom-td"> {{element.price | currency:'EUR'}} </td>
+          </ng-container>
+      
+          <ng-container matColumnDef="quantity">
+            <th mat-header-cell *matHeaderCellDef class="custom-th"> Quantity </th>
+            <td mat-cell *matCellDef="let element" class="custom-td">{{element.quantity}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="total">
+            <th mat-header-cell *matHeaderCellDef class="custom-th"> Total </th>
+            <td mat-cell *matCellDef="let element" class="custom-td"> {{element.total | currency:'EUR'}} </td>
+          </ng-container>>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+       
+        </table>
+       
+      </div> 
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="onClick()">Close</button>
+
+</mat-dialog-actions>

@@ -1,0 +1,50 @@
+<div class="container mb-3">
+    <div class="row">
+    
+        <div class="col-12 text-center  margin">
+            <h1 class="mb-5">Login</h1>
+            <form  [formGroup]="loginForm" >
+                <div class="row">
+                    <div class="col-12">
+                        <p>
+                            <mat-form-field  >
+                              <mat-label>Email</mat-label>
+                              <input matInput formControlName="email"/>
+                              <mat-error>
+                                <ng-container *ngIf="loginForm.get('email')?.hasError('required')">
+                                    The field is required.
+                                </ng-container>
+                                <ng-container *ngIf="loginForm.get('email')?.hasError('email')">
+                                    Email is not in valid format.
+                                </ng-container>
+                              </mat-error>
+                            </mat-form-field>
+                          </p>
+                    </div>
+                    <div class="col-12">
+                        <p>
+                            <mat-form-field >
+                              <mat-label>Password</mat-label>
+                              <input matInput formControlName="password" type="password"/>
+                              <mat-error>
+                                <ng-container *ngIf="loginForm.get('password')?.hasError('required')">
+                                    The field is required.
+                                </ng-container>
+                              </mat-error>
+                            </mat-form-field>
+                          </p>
+                    </div>
+                </div>
+                <div class="col-12 mt-3">
+                    <a routerLink="/register" class="nav-link link" routerLinkActive="active">Don't have an account? Register here</a>
+                </div>
+                <div class="col-12 mt-5">
+                    <button mat-raised-button color="warn" (click)="checkForm()" [disabled]="loginForm.invalid">Save</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</div>
+

@@ -1,0 +1,99 @@
+[
+    {
+        "id":1,
+        "pseudonym": "GRRM",
+        "firstName": "George Raymond Richard",
+        "lastName": "Martin",
+        "dateOfBirth": "1948-09-20",
+        "country": "U.S"
+    },
+    {
+        "id":2,
+        "pseudonym": "none",
+        "firstName": "Ivo",
+        "lastName": "Andrić",
+        "dateOfBirth": "1892-10-09",
+        "country": "Serbia"
+    },
+    {
+        "id": 3,
+        "pseudonym": "none",
+        "firstName": "Stephen Edwin",
+        "lastName": "King",
+        "dateOfBirth": "1947-09-21",
+        "country": "U.S"
+    },
+    {
+        "id": 4,
+        "pseudonym": "none",
+        "firstName": "Dejan",
+        "lastName": "Stojiljković",
+        "dateOfBirth": "1976-05-17",
+        "country": "Serbia"
+    },
+    {
+        "id": 5,
+        "pseudonym": "none",
+        "firstName": "Dejan Tiago",
+        "lastName": "Stanković",
+        "dateOfBirth": "1965-11-02",
+        "country": "Serbia"
+    },
+    {
+        "id": 6,
+        "pseudonym": "none",
+        "firstName": "Ernest",
+        "lastName": "Cline",
+        "dateOfBirth": "1972-03-29",
+        "country": "U.S"
+    },
+    {
+        "id": 7,
+        "pseudonym": "none",
+        "firstName": "Stephenie",
+        "lastName": "Meyer",
+        "dateOfBirth": "1973-12-24",
+        "country": "U.S"
+    },
+    {
+        "id": 8,
+        "pseudonym": "J.K. Rowling",
+        "firstName": "Joanne",
+        "lastName": "Rowling",
+        "dateOfBirth": "1965-06-31",
+        "country": "England"
+    },
+    {
+        "id": 9,
+        "pseudonym": "J.R.R. Tolkien",
+        "firstName": "John Ronald Reuel",
+        "lastName": "Tolkien",
+        "dateOfBirth": "1892-01-03",
+        "country": "Orange Free State"
+    },
+    {
+        "id": 10,
+        "pseudonym": "none",
+        "firstName": "James",
+        "lastName": "Clear",
+        "dateOfBirth": "1985-11-22",
+        "country": "U.S"
+    },
+    {
+        "id": 11,
+        "pseudonym": "none",
+        "firstName": "Mirjana",
+        "lastName": "Bobić-Mojsilović",
+        "dateOfBirth": "1985-11-22",
+        "country": "U.S"
+    },
+    {
+        "id": 12,
+        "pseudonym": "none",
+        "firstName": "William",
+        "lastName": "Shakespeare",
+        "dateOfBirth": "1564-04-26",
+        "country": "England"
+    }
+]
+

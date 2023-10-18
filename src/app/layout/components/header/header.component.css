@@ -1,0 +1,25 @@
+.header-top{
+    
+    border-bottom: 2px solid #15616d;
+}
+.header-icons {
+    font-size: 16px;
+    text-align: right;
+    margin:auto auto;
+}
+.header-logo img{
+    width:200px;
+}
+.header-icons a{
+    text-decoration: none;
+    color:#001524;
+}
+    @media screen and (max-width:426px){
+       .header-icons{
+        text-align: center;
+       }
+       .header-logo{
+        text-align: center;
+       }
+    }
+    

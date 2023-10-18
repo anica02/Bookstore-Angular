@@ -1,0 +1,73 @@
+<div class="container mb-3">
+    <div class="row">
+        <div class="col-12 text-center  margin">
+            <h1 class="mb-5">Order form</h1>
+            <form  [formGroup]="orderForm" >
+                <div class="row">
+                   
+                        <div class="col-12">
+                            <p>
+                                <mat-form-field  >
+                                  <mat-label>Address</mat-label>
+                                  <input matInput formControlName="address"/>
+                                  <mat-error>
+                                    <ng-container *ngIf="orderForm.get('address')?.hasError('required')">
+                                        The field is required.
+                                    </ng-container>
+                                    <ng-container *ngIf="orderForm.get('address')?.hasError('pattern')">
+                                        Valid format: Dimitrija Tucovića 12, Belgarde 11000
+                                    </ng-container>
+                                  </mat-error>
+                                </mat-form-field>
+                              </p>
+                        </div>
+                        <div class="col-12">
+                            <p>
+                                <mat-form-field  >
+                                  <mat-label>Delivery method</mat-label>
+                                  
+                                    <mat-select formControlName="deliveryMethod">
+                                        <mat-option *ngFor="let d of deliverys" [value]="d.value">
+                                        {{d.viewValue}}
+                                        </mat-option>
+                                    </mat-select>
+                                  <mat-error>
+                                    <ng-container *ngIf="orderForm.get('deliveryMethod')?.hasError('required')">
+                                        The field is required.
+                                    </ng-container>
+                                   
+                                  </mat-error>
+                                </mat-form-field>
+                              </p>
+                        </div>
+                        <div class="col-12">
+                            <p>
+                                <mat-form-field  >
+                                  <mat-label>Payment method</mat-label>
+                                  <mat-select formControlName="paymentMethod">
+                                    <mat-option *ngFor="let p of payments" [value]="p.value">
+                                    {{p.viewValue}}
+                                    </mat-option>
+                                </mat-select>
+                                  <mat-error>
+                                    <ng-container *ngIf="orderForm.get('paymentMethod')?.hasError('required')">
+                                        The field is required.
+                                    </ng-container>
+                                   
+                                  </mat-error>
+                                </mat-form-field>
+                              </p>
+                        </div>
+                       
+               </div>
+                <div class="col-12 mt-5">
+                    <button mat-raised-button color="warn" (click)="checkForm()" [disabled]="orderForm.invalid">Submit</button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+</div>
+

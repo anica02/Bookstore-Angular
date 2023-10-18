@@ -1,0 +1,41 @@
+<h2 mat-dialog-title>Order edit</h2>
+<mat-dialog-content>
+
+    <div class="container text-center">
+      <h2 class="mb-3">Order id:
+        {{order.id}}
+        
+      </h2>
+      <h2>User id: {{order.userId}}</h2>
+    <form  [formGroup]="editForm" >
+        <div class="row">
+            <div class="col-12">
+                <p>
+                    <mat-form-field  >
+                      <mat-label>Is Active</mat-label>
+                      <mat-select formControlName="isActive">
+                        <mat-option *ngFor="let s of status " [value]="s.value">
+                        {{s.viewValue}}
+                        </mat-option>
+                    </mat-select>
+                      <mat-error>
+                        <ng-container *ngIf="editForm.get('isActive')?.hasError('required')">
+                            The field is required.
+                        </ng-container>
+                      </mat-error>
+                    </mat-form-field>
+                  </p>
+            </div>
+            
+        </div>
+        <div class="col-12 mt-3">
+            <button mat-raised-button color="primary" (click)="checkForm()" [disabled]="editForm.invalid">Save</button>
+        </div>
+
+    </form>
+    </div>
+
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="onClick()">Close</button>
+</mat-dialog-actions>

@@ -1,0 +1,159 @@
+
+[
+    {
+        "id": 1,
+        "name": "Fantasy",
+        "parentId": null,
+        "subgenres": [
+            {
+                "id": 2,
+                "name": "Dark Fantasy",
+                "parentId":1,
+                "subgenres": []
+            },
+            {
+                "id": 3,
+                "name": "Fairy Tale",
+                "parentId": 1,
+                "subgenres": []
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Horror",
+        "parentId": null,
+        "subgenres": [
+            {
+                "id": 5,
+                "name": "Paranorlam Horror",
+                "parentId": 4,
+                "subgenres": []
+            },
+            {
+                "id": 6,
+                "name": "Psychological Horror",
+                "parentId": 4,
+                "subgenres": []
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Fiction",
+        "parentId": null,
+        "subgenres": [
+            {
+                "id": 8,
+                "name": "Pop Culture Fiction",
+                "parentId": 7,
+                "subgenres": []
+            },
+            {
+                "id": 9,
+                "name": "Science fiction",
+                "parentId": 7,
+                "subgenres": []
+            },
+            {
+                "id": 10,
+                "name": "Historical fiction",
+                "parentId": 7,
+                "subgenres": []
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Thrller",
+        "parentId": null,
+        "subgenres": [
+            {
+                "id": 12,
+                "name": "Historical Thriller",
+                "parentId": 11,
+                "subgenres": []
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Satire",
+        "parentId": null,
+        "subgenres": []
+    },
+    {
+        "id": 14,
+        "name": "Romance",
+        "parentId": null,
+        "subgenres": [
+            {   
+                "id": 15,
+                "name": "Paranormal romance",
+                "parentId": 14,
+                "subgenres": []
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Poetry",
+        "parentId": null,
+        "subgenres": []
+    },
+    {
+        "id": 17,
+        "name": "Career advice",
+        "parentId": null,
+        "subgenres": []
+    },
+    {
+        "id": 18,
+        "name": "Drama",
+        "parentId": null,
+        "subgenres": [
+            {
+                "id": 19,
+                "name": "Tragedy",
+                "parentId": 18,
+                "subgenres": []
+            },
+            {
+                "id": 20,
+                "name": "Comedy",
+                "parentId": 18,
+                "subgenres": []
+            },
+            {
+                "id": 21,
+                "name": "Melodrama",
+                "parentId": 18,
+                "subgenres": []
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "name": "Adventure",
+        "parentId": null,
+        "subgenres": []
+
+    },
+    {
+        "id": 23,
+        "name": "Novel",
+        "parentId": null,
+        "subgenres": []
+
+    },
+
+    {
+        "id": 24,
+        "name": "Classic",
+        "parentId": null,
+        "subgenres": []
+
+    }
+
+  
+]

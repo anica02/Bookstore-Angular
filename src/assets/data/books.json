@@ -1,0 +1,412 @@
+[
+  {
+    "id": 1,
+    "name": "It",
+    "description": "To the adults, knowing better, Derry Maine was just their home town: familiar, well-ordered for the most part. A good place to live.It is the children who see - and feel - what makes the small town of Derry so horribly different. In the storm drains, in the sewers, IT lurks, taking on the shape of every nightmare, each one's deepest dread. Sometimes IT reaches up, seizing, tearing, killing ...",
+    "code": 1234567890,
+    "bookAuthors": [3],
+    "bookPublisher": 
+      {
+        "id": 1,
+        "numberOfPages": 1392,
+        "bookCover": "Hardcover",
+        "bookFormat": "12x18",
+        "bookWritingSystem": "Latin Alphabet",
+        "year": 2011,
+        "publisherId": 2,
+        "price": 12.62,
+        "image": {
+            "id": 1,
+            "path": "it.png",
+            "size": 200
+        }
+      }
+    ,
+    "bookGenres": [4,7]
+  },
+  {
+    "id": 2,
+    "name": "A Clash of Kings",
+    "description": "A Clash of Kings depicts the Seven Kingdoms of Westeros in civil war, while the Night's Watch mounts a reconnaissance to investigate the mysterious people known as wildlings. Meanwhile, Daenerys Targaryen continues her plan to conquer the Seven Kingdoms.",
+    "code": 1234567891,
+    "bookAuthors": [1],
+    "bookPublisher": 
+      {
+        "id": 2,
+        "numberOfPages": 756,
+        "bookCover": "Softcover",
+        "bookFormat": "14x20",
+        "bookWritingSystem": "Latin Alphabet",
+        "year": 2017,
+        "publisherId": 4,
+        "price": 11.94,
+        "image": {
+            "id": 2,
+            "path": "got2.png",
+            "size": 200
+        }
+      }
+    ,
+    "bookGenres": [7,1]
+  },
+  {
+    "id": 3,
+    "name": "Prokleta Avlija",
+    "description": "The Constantinople prison, called the Cursed Court, with its symbolically colorful world, brought together a modest, honest and innocently accused Bosnian friar and a disillusioned, life-poisoned and fiction-obsessed Turkish rich man.",
+    "code": 1234567892,
+    "bookAuthors": [2],
+    "bookPublisher": 
+      {
+        "id": 3,
+        "numberOfPages": 121,
+        "bookCover": "Softcover",
+        "bookFormat": "14x20",
+        "bookWritingSystem": "Latin Alphabet",
+        "year": 2011,
+        "publisherId": 3,
+        "price": 15.19,
+        "image": {
+            "id":3,
+            "path": "prokletaAvlija.png",
+            "size": 100
+        }
+      }
+    ,
+    "bookGenres": [7,22]
+  },
+  {
+    "id": 4,
+    "name": "Hamlet",
+    "description": "Undoubtedly the most famous of all of Shakespeare's plays, Hamlet remains one of the most enduring but also enigmatic pieces of western literature. The story of Hamlet, the young Prince of Denmark, his tortured relationship with his mother, and his quest to avenge his father's murder at the hand ... ",
+    "code": 1234567893,
+    "bookAuthors": [12],
+    "bookPublisher": 
+      {
+        "id": 4,
+        "numberOfPages": 192,
+        "bookCover": "Softcover",
+        "bookFormat": "12x19",
+        "bookWritingSystem": "Latin Alphabet",
+        "year": 1992,
+        "publisherId": 10,
+        "price": 5.63,
+        "discount": {
+          "percentage":15,
+          "startsAt":"2023-08-11",
+          "endsAt":"2023-11-25"
+        },
+        "image": {
+            "id":4,
+            "path": "hamlet.png",
+            "size": 100
+        }
+     }
+    ,
+    "bookGenres": [19,24]
+
+  },
+  {
+    "id": 5,
+    "name": "Romeo and Juliet",
+    "description": "Love and death are the components of Shakespeare's classic story of the love of two young people which reaches across the barriers of family and convention. It encompasses great love, high drama, low comedy and a tragic ending. Romeo and Juliet is a pure tragedy of youth told in verse that is both youthful and intense. The loveliness and the music of the poetry make believable the otherwise commonplace afflictions of blighted love",
+    "code": 1234567894,
+    "bookAuthors": [12],
+    "bookPublisher": 
+      {
+        "id": 5,
+        "numberOfPages": 160,
+        "bookCover": "Softcover",
+        "bookFormat": "13x20",
+        "bookWritingSystem": "Latin Alphabet",
+        "year": 2000,
+        "publisherId": 10,
+        "price": 5.63,
+        "discount": {
+          "percentage":15,
+          "startsAt":"2023-08-19",
+          "endsAt":"2023-11-25"
+        },
+        "image": {
+          "id":5,
+          "path": "romeoAndJuliet.png",
+          "size": 100
+        }
+      }
+    ,
+    "bookGenres": [19]
+  },
+  {
+    "id": 6,
+    "name": "Zamalek",
+    "description":"In the heart of Cairo, on an island in the middle of the Nile, for decades there was an antique shop filled with all kinds of treasures like Ali-baba's cave. The store, the most famous in that part of the world, was run by Costa, a famous Egyptologist, and his daughter Arna until kismet, due to some mysterious sins of Costa, decided otherwise. This story, in which the mundane and the afterlife are mixed, could not have happened anywhere but in Cairo, so that desert megalopolis, its quiet neighborhood of Zamalek, the people, the customs and the heat of the city are as important heroes of the novel as Costa the antiquarian and the storyteller Arna, the dust which keeps falling and the Nile which flows like life.",
+    "code": 1234567895,
+    "bookAuthors": [5],
+    "bookPublisher": 
+      {
+        "id": 6,
+        "numberOfPages": 325,
+        "bookCover": "Softcover",
+        "bookFormat": "13x20",
+        "bookWritingSystem": "Latin Alphabet",
+        "year": 2020,
+        "publisherId": 4,
+        "price": 8.52,
+        "discount": {
+          "percentage":10,
+          "startsAt":"2023-08-19",
+          "endsAt":"2023-11-25"
+        },
+        "image": {
+            "id":6,
+            "path": "zamalek.png",
+            "size": 200
+        }
+      }
+    ,
+    "bookGenres": [18,10]
+  },
+  {
+    "id": 7,
+    "name": "Konstantinovo raskršće",
+    "description": "Conceived as a mystical thriller that takes place in the last days of the Second World War in Serbia, in Niš, at the crossroads of worlds, it brings the story of people trapped in the wheel of time under which the destinies of individuals and nations are crushed. Vampires, Aryan mystics, Nazis, partisans and Chetniks, illegals and agents of foreign secret services, fortune-tellers and occultists, ordinary people trying to preserve their bare lives in the time of evil... And the Roman emperor, born Nislija, who changed the course of history.",
+    "code": 1234567897,
+    "bookAuthors": [4],
+    "bookPublisher": 
+      {
+        "id": 7,
+        "numberOfPages": 338,
+        "bookCover": "Hardcover",
+        "bookFormat": "13x20",
+        "bookWritingSystem": "Latin Alphabet",
+        "year": 2019,
+        "publisherId": 4,
+        "price": 11.08,
+        "discount": {
+          "percentage":10,
+          "startsAt":"2023-08-19",
+          "endsAt":"2023-11-25"
+        },
+        "image": {
+            "id":7,
+            "path": "konstantinovo.png",
+            "size": 100
+        }
+      }
+    ,
+    "bookGenres": [12]
+  },
+  {
+    "id": 8,
+    "name": "Atomic habits",
+    "description": "The book 'Atomic Habits' by James Clear belongs to the genre of success psychology and since its first publication less than a year ago, it has become a bestseller in the field. This year, it will be on the shelves in as many as 40 countries around the world! James Clear, one of the world's leading experts on habit formation, reveals practical strategies that will teach us how to form good habits, break bad ones, and master small habits that lead to extraordinary results.",
+    "code": 1234567898,
+    "bookAuthors": [10],
+    "bookPublisher": 
+      {
+        "id": 8,
+        "numberOfPages": 267,
+        "bookCover": "Softcover",
+        "bookFormat": "14x20",
+        "bookWritingSystem": "Latin Alphabet",
+        "year": 2019,
+        "publisherId": 5,
+        "price": 10.23,
+        "discount": {
+          "percentage":10,
+          "startsAt":"2023-08-19",
+          "endsAt":"2023-11-25"
+        },
+        "image": {
+            "id":8,
+            "path": "atomskeNavike.png",
+            "size": 100
+        }
+      }
+    ,
+    "bookGenres": [17]
+  },
+  {
+    "id": 9,
+    "name": "Ready player two",
+    "description": "Days after winning OASIS founder James Halliday's contest, Wade Watts makes a discovery that changes everything. Hidden within Halliday's vaults, waiting for his heir to find it, lies a technological advancement that will once again change the world and make the OASIS a thousand times more wondrous - and addictive - than even Wade dreamed possible. With it comes a new riddle, and a new quest: a last Easter egg from Halliday, hinting at a mysterious prize.",
+    "code": 1234567899,
+    "bookAuthors": [6],
+    "bookPublisher": 
+      {
+        "id": 9,
+        "numberOfPages": 462,
+        "bookCover": "Softcover",
+        "bookFormat": "13x20",
+        "bookWritingSystem": "Latin Alphabet",
+        "year": 2011,
+        "publisherId": 7,
+        "price": 19.10,
+        "discount": {
+          "percentage":10,
+          "startsAt":"2023-08-19",
+          "endsAt":"2023-11-25"
+        },
+        "image": {
+            "id":9,
+            "path": "player.png",
+            "size": 200
+        }
+      }
+    ,
+    "bookGenres": [8,9]
+  },
+  {
+    "id": 10,
+    "name": "Sazvežđe svitaca",
+    "description": "The life stories of the six heroes of this novel will intertwine and change forever in seventy-two fateful hours. Forced to look life in the eye, they will either have to embrace it or remain forever thwarted in their aspirations. Firefly constellation is a collection of melancholy, hope and stormy feelings, which will hug you tight and won't let you go until it brings a tear, nostalgia, sadness, a big smile and a sigh of relief. Mirjana Bobić Mojsilović had never before written with such rich pen strokes.",
+    "code": 1234567810,
+    "bookAuthors": [11],
+    "bookPublisher": 
+      {
+        "id": 10,
+        "numberOfPages": 352,
+        "bookCover": "Softcover",
+        "bookFormat": "13x20",
+        "bookWritingSystem": "Latin Alphabet",
+        "year": 2023,
+        "publisherId": 4,
+        "price": 10.23,
+        "discount": {
+          "percentage":10,
+          "startsAt":"2023-08-19",
+          "endsAt":"2023-11-25"
+        },
+        "image": {
+            "id":10,
+            "path": "sazvezdje.png",
+            "size": 100
+        }
+      }
+    ,
+    "bookGenres": [14,18]
+  },
+  {
+    "id": 11,
+    "name": "Zankovi pored puta",
+    "description": "An inexhaustible source of wisdom, 'Roadside Signs' has been the favorite reading of many generations for almost half a century, a book that can be read with equal enjoyment wherever it is opened, a treasure trove of the most diverse advice, observations and life insights that this writer directed not only to readers but also to himself.",
+    "code": 1234567811,
+    "bookAuthors": [2],
+    "bookPublisher": 
+      {
+        "id": 11,
+        "numberOfPages": 567,
+        "bookCover": "Hardcover",
+        "bookFormat": "13x20",
+        "bookWritingSystem": "Cyrillic Alphabet",
+        "year": 2020,
+        "publisherId": 4,
+        "price": 12.78,
+        "discount": {
+          "percentage":15,
+          "startsAt":"2023-08-19",
+          "endsAt":"2023-11-25"
+        },
+        "image": {
+            "id":11,
+            "path": "znakovi.png",
+            "size": 100
+        }
+      }
+    ,
+    "bookGenres": [24]
+  },
+  {
+    "id": 12,
+    "name": "Twilight",
+    "description": "When 17 year old Isabella Swan moves to Forks, Washington to live with her father she expects that her new life will be as dull as the town. But in spite of her awkward manner and low expectations, she finds that her new classmates are drawn to this pale, dark-haired new girl in town. But not, it seems, the Cullen family. These five adopted brothers and sisters obviously prefer their own company and will make no exception for Bella.",
+    "bookAuthors": [7],
+    "code": 1234567812,
+    "bookPublisher": 
+      {
+        "id": 12,
+        "numberOfPages": 512,
+        "bookCover": "Softcover",
+        "bookFormat": "13x20",
+        "bookWritingSystem": "Latin Alphabet",
+        "year": 2007,
+        "publisherId": 6,
+        "price": 12.38,
+        "discount": {
+          "percentage":15,
+          "startsAt":"2023-08-19",
+          "endsAt":"2023-11-25"
+        },
+        "image": {
+            "id":12,
+            "path": "tw1.png",
+            "size": 200
+        }
+      }
+    ,
+    "bookGenres": [15 , 23]
+  },
+  {
+    "id": 13,
+    "name": "The fellowship of the ring",
+    "description": "In a quiet village in the Shire, young Frodo is about to receive a gift that will change his life forever. Thought lost centuries ago, it is the One Ring, an object of terrifying power once used by the Dark Lord to enslave Middle-earth. Now darkness is rising, and Frodo must travel deep into the Dark Lord’s realm, to the one place the Ring can be destroyed: Mount Doom.",
+    "code": 1234567813,
+    "bookAuthors": [9],
+    "bookPublisher": 
+      {
+        "id": 13,
+        "numberOfPages": 576,
+        "bookCover": "Softcover",
+        "bookFormat": "13x20",
+        "bookWritingSystem": "Latin Alphabet",
+        "year": 2022,
+        "publisherId": 8,
+        "price": 14.07,
+        "discount": {
+          "percentage":10,
+          "startsAt":"2023-08-19",
+          "endsAt":"2023-11-25"
+        },
+        "image": {
+            "id":13,
+            "path": "lord.png",
+            "size": 200
+        }
+      }
+    ,
+    "bookGenres": [22,7]
+  },
+  {
+    "id": 14,
+    "name": "Harry Potter and the Half-Blood Prince",
+    "description": "When Dumbledore arrives at Privet Drive one summer night to collect Harry Potter, his wand hand is blackened and shrivelled, but he does not reveal why. Secrets and suspicion are spreading through the wizarding world, and Hogwarts itself is not safe.",
+    "code": 1234567814,
+    "bookAuthors": [8],
+    "bookPublisher": 
+      {
+        "id": 14,
+        "numberOfPages": 562,
+        "bookCover": "Softcover",
+        "bookFormat": "13x20",
+        "bookWritingSystem": "Latin Alphabet",
+        "year": 2014,
+        "publisherId": 8,
+        "price": 14.91,
+        "discount": {
+          "percentage":10,
+          "startsAt":"2023-08-19",
+          "endsAt":"2023-11-25"
+        },
+        "image": {
+            "id":14,
+            "path": "harry4.png",
+            "size": 200
+        }
+      }
+    ,
+    "bookGenres": [1]
+  }
+
+
+
+  
+]

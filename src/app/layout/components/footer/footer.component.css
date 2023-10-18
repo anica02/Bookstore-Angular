@@ -1,0 +1,18 @@
+footer{
+    border-top: 2px solid #15616d;
+    color:#001524;
+    font-size: 15px;
+    padding: 2%;
+}
+footer h4{
+    color:#78290f;
+    font-size:18px;
+}
+#socialN i{
+    color:#ff7d00;
+}
+ul li a:hover{
+    border-bottom: none;
+    text-shadow: 1px 1px gray;
+    text-decoration: none;
+}

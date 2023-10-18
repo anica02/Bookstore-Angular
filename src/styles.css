@@ -1,0 +1,447 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+/*
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+  
+}
+p,h1,h2,h3,h4,h5,h6,a,li,hr,ul{
+    font-family: 'PT Serif', serif!important;
+}
+ul{
+    list-style-type: none;
+}
+
+.btnView{
+    background-color:#78290f;
+    color:aliceblue;
+    font-weight: bold;
+    padding: 1px 35px;
+
+}
+.bookCardImg{
+    width:80%;
+    height:300px;
+}
+.bookCardImgFull{
+    width: 100%;
+    height:300px;
+}
+.discount{
+    float:right;
+    position: relative;
+  
+}
+.discountBooks{
+    float:right;
+    position: relative;
+  
+}
+.discountBooks i{
+    position:absolute;
+    right: -15px;
+    top:10px;
+    font-size: 40px;
+    color:#ff7d00;
+}
+.discountBooks span{
+    font-weight: bold;
+    position: absolute;
+    font-size: 12px;
+    top:20px;
+    right:2px;
+    color:white;
+}
+
+.discount i{
+    position:absolute;
+    right: 10px;
+    top:10px;
+    font-size: 40px;
+    color:#ff7d00;
+}
+.discount span{
+    font-weight: bold;
+    position: absolute;
+    font-size: 12px;
+    top:20px;
+    right:26px;
+    color:white;
+}
+
+
+
+
+
+ul li{
+    display: inline;
+}
+
+#navbarNav ul li a{
+    font-size:20px;
+    color:#78290f !important;
+}
+
+ul li a:hover{
+    border-bottom: #ff7d00 2px solid;
+    text-decoration: none;
+}
+.colorRottenCherry{
+    color:#7D4F50;
+}
+.colorMint{
+    color:#839791;
+}
+.colorPink{
+    color:#CC8B86; 
+}
+.colorWhite{
+    color:#fff;
+}
+.font26{
+    font-size: 26px;
+}
+.font18{
+    font-size:18px;
+}
+#navigation i{
+    display: none;
+}
+
+#banner{
+   
+    background-size: cover;
+    width: 100%;
+    height: 680px;
+    border-radius: 5px;
+    margin-top: 5%;
+}
+.marginTop{
+    margin-top: 7%;
+}
+#motto{
+    width: 30%;
+    margin-top: 17%;
+    margin-bottom: 3%;
+    border: 2px solid #7D4F50;
+    border-radius: 5px;
+    background-color: #ffff;
+    padding: 30px 10px;
+}
+
+#buttons-Links{
+    margin:1 auto;
+}
+.dugme{
+    border: 1px solid #7D4F50;
+    background-color: #ffff;
+    font-weight: bold;
+    font-size: 20px;
+}
+.dugme:hover{
+    color:#7D4F50;
+    box-shadow: 3px 4px #839791;
+}
+.btnCart{
+    border: 1px solid #7D4F50;
+    background-color: #ffff;
+    font-size: 15px;
+}
+.btnCart:hover{
+    color:#7D4F50;
+    box-shadow: 3px 4px #839791;
+}
+.description{
+    padding:2%;
+    height: inherit;
+}
+.centering{
+    margin:0 auto;
+}
+.top-margin{
+    margin-top:10%;
+}
+
+
+
+#cart span{
+    font-size: 26px;
+    border:1px solid #7D4F50;
+    padding:3px 15px;
+    border-radius: 5px 10px;
+}
+#cart i{
+    font-size: 26px;
+}
+#cart i:hover{
+    font-size: 30px;
+}
+.borderCards{
+    border:2px solid #839791;
+    border-radius: 20px 5px;
+    border-style: outset;
+    padding: 4% 2%;
+}
+
+.borderLi{
+    border-color: #839791;
+    border-style: inset;
+}
+.week{
+    background-color: #839791;
+    color:#fff;
+    border-radius:5px 10px;
+}
+.spring{
+    background-color:#CC8B86;
+    color:#fff;
+    border-radius:5px 10px;
+}
+.holiday{
+    background-color:#7D4F50;
+    color:#fff; 
+    border-radius:5px 10px;
+}
+.filterC{
+    background-color:#AA998F;
+    color:#fff;
+    border-radius: 5px 10px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+input[type=search]{
+    border: none;
+    border-bottom:2px solid #7D4F50;
+    padding: 5px;
+}
+.fontIS{
+    font-size: 22px;
+}
+.inStock{
+    color:green;
+    font-size: 17px;
+}
+.outStock{
+    color:#ae2012;
+    font-size: 17px;
+}
+.fontSize{
+    font-size: 19px;
+}
+.footerCol{
+    background-color:#839791;
+    border-radius: 5px 10px;
+    color:#fff;
+    font-size: 18px;
+}
+.fontSI{
+    font-size:25px
+}
+#socialN a:hover{
+    color:#839791;
+}
+#cart{
+    width:30%;
+}
+#cart img{
+    width: 70%;
+}
+.bcGreen{
+    background-color:#839791
+}
+.bc{
+    background-color:#839791
+}
+.widthNum{
+    width:60%;
+}
+.removeButton{
+    border: 1px solid #7D4F50;
+    border-radius: 5px 10px;
+    background-color: #ffff;
+    font-weight: bold;
+    font-size: 17px;
+}
+#authorImg img{
+    border-radius: 10px 30px;
+}
+#authorText{
+    border-radius: 10px 30px;
+    border:3px solid #7D4F50;
+}
+
+@media screen and (max-width:769px){
+    ul li{
+        display: block !important;
+    }
+    #navigation i{
+        display: block !important;
+    }
+    #motto{
+        margin-top: 35%;
+        margin-bottom: 3%;
+    }
+    #motto h2{
+        font-size: 18px;
+        
+    }
+    .marginTop{
+        margin-top: 15%;
+    }
+    .navbar{
+        display: flex;
+        justify-content: center;
+    }
+    #navbarNav{
+        text-align: center!important;
+    }
+    .bookCardImg{
+        width:70%;
+    }
+
+}
+@media screen and (max-width:426px){
+    .centering{
+        font-size:20px;
+    }
+    #banner{
+        height: 300px;
+        margin-top: 17%;
+    }
+   
+    #motto h2{
+        font-size: 10px;
+        padding:0px;
+    }
+    .dugme{
+        font-size:14px;
+    }
+    .marginTop{
+        margin-top: 30%;
+    }
+    .carousel-height{
+        height: 50vh;
+    }
+    .carousel-item img{
+        height:50vh;
+        width:100%;
+    }
+    .header-top{
+        padding:15px;
+    }
+    .bookCardImgFull{
+        width:60%;
+    }
+    .bookCardImg{
+        width:65%;
+    }
+
+    .discount i{
+     
+        right: 35px;
+        top:10px;
+       
+    }
+    .discount span{
+       
+        top:20px;
+        right:50px;
+    }
+    .bookCardImgFull{
+        width: 62%;
+    }
+    .discountBooks i{
+     
+        right: 35px;
+        top:10px;
+       
+    }
+    .discountBooks span{
+       
+        top:20px;
+        right:50px;
+    }
+
+  
+}
+@media screen and (max-width:376px){
+   
+
+    .bookCardImg{
+        width:70%;
+    }
+    .bookCardImgFull{
+        width:75%;
+    }
+    .discount i{
+     
+        right: 15px;
+        top:10px;
+       
+    }
+    .discount span{
+       
+        top:20px;
+        right:30px;
+    }
+
+    .discountBooks i{
+     
+        right: 15px;
+        top:10px;
+       
+    }
+    .discountBooks span{
+       
+        top:20px;
+        right:30px;
+    }
+
+  
+}
+@media screen and (max-width:321px){
+   
+    .bookCardImgFull{
+        width:90%;
+    }
+    .bookCardImg{
+        width:85%;
+    }
+
+    .discount i{
+     
+        right: 10px;
+        top:10px;
+       
+    }
+    .discount span{
+       
+        top:20px;
+        right:25px;
+    }
+
+    .discountBooks i{
+     
+        right: -5px;
+        top:10px;
+       
+    }
+    .discountBooks span{
+       
+        top:20px;
+        right:10px;
+    }
+
+   
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

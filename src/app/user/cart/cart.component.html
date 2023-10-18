@@ -1,0 +1,70 @@
+<div class="container mb-3">
+    <div class="row">
+        <div class="col-12 text-center marginContainer ">
+            <h1>Cart</h1>
+            <div *ngIf="cartIsEmpty;  else Items">
+                <div class="col-12 emptyMargin">
+                  <div class="alert alert-warning text-center" role="alert">
+                   Cart is empty
+                  </div>
+                </div>
+            </div>
+            <ng-template #Items>
+              <div class="mat-elevation-z8 cartMargin">
+            
+                <table mat-table [dataSource]="dataSource">
+              
+                 
+                  <ng-container matColumnDef="name">
+                    <th mat-header-cell *matHeaderCellDef class="custom-th"> Name </th>
+                    <td mat-cell *matCellDef="let element" class="custom-td"> {{element.name}} </td>
+                  </ng-container>
+              
+                 
+                  <ng-container matColumnDef="image">
+                    <th mat-header-cell *matHeaderCellDef class="custom-th"> Image </th>
+                    <td mat-cell *matCellDef="let element" class="custom-td"> <img src="../../../../assets/img/{{element.image}}" alt="{{element.name}}" class="image"/></td>
+                  </ng-container>
+              
+                  
+                  <ng-container matColumnDef="price">
+                    <th mat-header-cell *matHeaderCellDef class="custom-th"> Price </th>
+                    <td mat-cell *matCellDef="let element" class="custom-td"> {{element.price | currency:'EUR'}} </td>
+                  </ng-container>
+              
+                  <ng-container matColumnDef="quantity">
+                    <th mat-header-cell *matHeaderCellDef class="custom-th"> Quantity </th>
+                    <td mat-cell *matCellDef="let element" class="custom-td"> <input type="number" name="quantity" min="1" [(ngModel)]="element.quantity" value="{{element.quantity}}" class="quantityW"> </td>
+                  </ng-container>
+
+                  <ng-container matColumnDef="total">
+                    <th mat-header-cell *matHeaderCellDef class="custom-th"> Total </th>
+                    <td mat-cell *matCellDef="let element" class="custom-td"> {{ element.total | currency:'EUR'}} </td>
+                  </ng-container>
+
+                  <ng-container matColumnDef="edit">
+                    <th mat-header-cell *matHeaderCellDef class="custom-th"> Edit </th>
+                    <td mat-cell *matCellDef="let element" class="custom-td"> <button  mat-raised-button color="primary" (click)="editCart(element.id)"  >Edit</button> </td>
+                  </ng-container>
+
+                  <ng-container matColumnDef="delete">
+                    <th mat-header-cell *matHeaderCellDef class="custom-th"> Delete </th>
+                    <td mat-cell *matCellDef="let element" class="custom-td">  <button mat-raised-button color="warn" (click)="openConfirmationDialog(element.id)"   >Delete</button> </td>
+                  </ng-container>
+
+                  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                  <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+                </table>
+               
+              </div> 
+              
+              <div class="col-12 ">
+                <h2 class="cartTotal">Total: {{totalForAll}}</h2>
+                <button class="buttonCart" (click)="goToOrderForm()" >Purches</button>
+            </div>
+          </ng-template>
+          
+              
+        </div>
+    </div>
+</div>
